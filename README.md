@@ -51,5 +51,9 @@ nnoremap <leader>yc :<C-u>Ydc<CR>
 noremap <leader>ye :<C-u>Yde<CR>
 ```
 
+## Demo
+
+![](https://xiaozhou.net/pics/ydict.gif)
+
 ## License
 The MIT License (MIT)
