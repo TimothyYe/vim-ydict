@@ -11,7 +11,7 @@ let s:translator.on_stderr = function('s:translator.on_stdout')
 
 function! s:translator.start(lines)
     let cmd = ydict#GetAvailableCmd()
-    if empty(python_cmd)
+    if empty(cmd)
         echoerr "[Vim-Ydict] [Error]: ydict neeeds to be installed! Please visit: https://github.com/TimothyYe/ydict to install it."
         return -1
     endif
