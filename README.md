@@ -48,7 +48,7 @@ nnoremap <leader>yc :<C-u>Ydc<CR>
 3. Use `<leader>+yd` to input the words you want to query:
 
 ```text
-noremap <leader>ye :<C-u>Yde<CR>
+noremap <leader>yd :<C-u>Yde<CR>
 ```
 
 ## Demo
