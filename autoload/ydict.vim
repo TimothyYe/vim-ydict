@@ -1,5 +1,10 @@
-function! ydict#VimOutCallback(chan, msg)
-    echo a:msg
+function! ydict#VimOutCallback(channel)
+    let append_s=""
+    while ch_status(a:channel, {'part': 'out'}) == 'buffered'
+          let  append_s .=  ch_read(a:channel) . "\n"
+    endwhile
+    echo append_s
+    call input('Press ENTER to continue')
 endfunction
 
 function! ydict#GetVisualSelection()

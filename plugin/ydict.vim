@@ -20,7 +20,7 @@ function! s:translator.start(lines)
     if exists('*jobstart')
         return jobstart(cmd, self)
     elseif exists('*job_start') && ! has("gui_macvim")
-        return job_start(cmd, {'out_cb': "ydict#VimOutCallback"})
+        return job_start(cmd, {'close_cb': "ydict#VimOutCallback"})
     else
         echo system(cmd)
     endif
